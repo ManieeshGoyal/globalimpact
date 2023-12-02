@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Impact by Manish Goyal</title>
+    <script
+      src="https://kit.fontawesome.com/9de8e65a42.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- BRAND-LOGO -->
+    <div class="flex">
+      <img src="#" class="company-logo" alt="My Logo" />
+    </div>
+
+    <!-- NAV - BAR -->
+
+    <nav>
+      <div class="nav-bar-links flex">
+        <ul class="flex">
+          <li class="nav-links">Home</li>
+          <li class="nav-links">Bollywood</li>
+          <li class="nav-links">Hollwood</li>
+          <li class="nav-links">Latest News</li>
+          <li class="nav-links">Lifestyle</li>
+          <li class="nav-links">India</li>
+          <li class="nav-links">Trending</li>
+
+          <!-- DROPDOWN - LIST  -->
+
+          <li class="nav-links" id="section">
+            Sections &nbsp; <i class="fa-solid fa-angle-down"></i>
+            <ul class="dropdown">
+              <li class="sub-links">Magzine</li>
+              <li class="sub-links">Politics</li>
+              <li class="sub-links">Culture</li>
+              <li class="sub-links">India</li>
+              <li class="sub-links">World</li>
+              <li class="sub-links">Film & TV</li>
+              <li class="sub-links">Music</li>
+              <li class="sub-links">Books and Ideas</li>
+              <li class="sub-links">Business and Economy</li>
+              <li class="sub-links">Science and Technology</li>
+              <li class="sub-links">In Pictures</li>
+              <li class="sub-links">Books</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="search-box flex">
+          <input id="search" type="text" placeholder="eg. science" />
+          <button class="primary-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="primary-button">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Settings Modal Window -->
+    <div class="settings-modal-win hidden">
+      <div class="flex">
+        <h2>Settings</h2>
+        <i class="fa-sharp fa-solid fa-xmark fa-xl"></i>
+      </div>
+
+      <div class="setting-option-container">
+        <div class="modal-options">
+          <h3>Apperance</h3>
+          <a id="default-theme" class="settings-options"
+            >Auto &nbsp;<i class="fa-solid fa-circle-check fa-lg"></i
+          ></a>
+          <a id="light-mode" class="settings-options"
+            >Light <i class="fa-solid fa-circle-check fa-lg"></i
+          ></a>
+          <a id="dark-mode" class="settings-options"
+            >Dark <i class="fa-solid fa-circle-check fa-lg"></i
+          ></a>
+        </div>
+
+        <div class="modal-options">
+          <h3>Other Links</h3>
+          <a href="#" class="settings-options"
+            ><i class="fa-brands fa-github fa-lg"></i> &nbsp; Git Hub</a
+          >
+          <a href="#" class="settings-options"
+            ><i class="fa-brands fa-linkedin-in fa-lg"></i> &nbsp;
+            linkedin-in</a
+          >
+          <a href="" class="settings-options"
+            ><i class="fa-brands fa-instagram fa-lg"></i> &nbsp; Instgram</a
+          >
+          <a href="" class="settings-options"
+            ><i class="fa-sharp fa-regular fa-comments"></i> &nbsp; Feedback</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <!-- Cards-Section -->
+
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="news-card-template">
+      <div class="card">
+        <div class="card-header">
+          <img
+            id="news-img"
+            src="http://via.placeholder.com/400x200"
+            alt="News image"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 id="news-source">End Gadget 07-10-2023</h6>
+          <p id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            porro explicabo quae saepe eligendi hic mollitia. Aliquid id velit
+            reprehenderit?
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">subscriptions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Other Links</h4>
+          <ul>
+            <li><a href="#">Cv</a></li>
+            <li><a href="#">github</a></li>
+            <li><a href="#">all version</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow me</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; Copyrights by Manish Goyal</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </body>
+</html>
